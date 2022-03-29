@@ -53,6 +53,9 @@ def main(_config, _run):
     sacred.commands.print_config(_run)
     make_deterministic(12345)
 
+    print("printing config \n")
+    print(dict(_config))
+    print("\n\n")
     model = MOTNeuralSolver(hparams = dict(_config))
 
     run_str, save_dir = get_run_str_and_save_dir(_config['run_id'], _config['cross_val_split'], _config['add_date'])
