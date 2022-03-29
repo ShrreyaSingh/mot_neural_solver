@@ -30,7 +30,7 @@ class MOTNeuralSolver(pl.LightningModule):
     def __init__(self, hparams):
         super().__init__()
 
-        self.hparams = hparams
+        self.hparams.update(hparams)
         self.model, self.cnn_model = self.load_model()
     
     def forward(self, x):
