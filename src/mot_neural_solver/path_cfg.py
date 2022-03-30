@@ -12,7 +12,7 @@ PROJECT_PATH = pathlib.Path(__file__).parent.parent.parent.absolute()
 DATA_PATH = None
 
 # Absolute path where results (e.g. output result files, model weights) will be stored
-OUTPUT_PATH = None
+OUTPUT_PATH = '/content/drive/My\ Drive/Project\ Course/mot_neural_solver/'
 
 if DATA_PATH is None:
     DATA_PATH = osp.join(PROJECT_PATH, 'data')
