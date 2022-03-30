@@ -75,8 +75,8 @@ def main(_config, _run):
                       checkpoint_callback=False,
                       max_epochs=_config['train_params']['num_epochs'],
                       check_val_every_n_epoch=_config['eval_params']['check_val_every_n_epoch'],
-                      logger =logger,
-                      default_save_path=osp.join(OUTPUT_PATH, 'experiments', run_str))
+                      logger =logger)
+#                       default_save_path=osp.join(OUTPUT_PATH, 'experiments', run_str))
 #     val_percent_check = _config['eval_params']['val_percent_check'],
 # nb_sanity_val_steps=0,
     trainer.fit(model)
